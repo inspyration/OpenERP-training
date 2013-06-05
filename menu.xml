@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!--         ACTIONS         -->
+
+        <record model="ir.actions.act_window" id="base_a_list_action">
+            <field name="name">BaseA</field>
+            <field name="res_model">testing.base.a</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="base_b_list_action">
+            <field name="name">BaseB</field>
+            <field name="res_model">testing.base.b</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="base_c_list_action">
+            <field name="name">BaseC (ClassInheritance)</field>
+            <field name="res_model">testing.base.c</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="base_d_list_action">
+            <field name="name">BaseD (PrototypeInheritance)</field>
+            <field name="res_model">testing.base.d</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="inheritance_prototype_list_action">
+            <field name="name">PrototypeInheritance (BaseD)</field>
+            <field name="res_model">testing.inheritance.prototype</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="inheritance_delegation_1_list_action">
+            <field name="name">DelegationInheritance1 (BaseA)</field>
+            <field name="res_model">testing.inheritance.delegation1</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="inheritance_delegation_2_list_action">
+            <field name="name">DelegationInheritance2 (BaseA, BaseB)</field>
+            <field name="res_model">testing.inheritance.delegation2</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="inheritance_delegation_3_list_action">
+            <field name="name">DelegationInheritance3 (BaseA)</field>
+            <field name="res_model">testing.inheritance.delegation3</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record model="ir.actions.act_window" id="inheritance_delegation_4_list_action">
+            <field name="name">DelegationInheritance4 (BaseA, BaseB)</field>
+            <field name="res_model">testing.inheritance.delegation4</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!--         MENUS         -->
+
+        <menuitem id="main_testing_menu" name="testing" />
+        <menuitem id="mt_settings_menu" name="Settings" parent="main_testing_menu" />
+
+        <menuitem id="mt_base_a_list_menu" name="BaseA" parent="mt_settings_menu" action="base_a_list_action" />
+        <menuitem id="mt_base_b_list_menu" name="BaseB" parent="mt_settings_menu" action="base_b_list_action" />
+        <menuitem id="mt_base_c_list_menu" name="BaseC (ClassInheritance)" parent="mt_settings_menu" action="base_c_list_action" />
+        <menuitem id="mt_base_d_list_menu" name="BaseD (PrototypeInheritance)" parent="mt_settings_menu" action="base_d_list_action" />
+        <menuitem id="mt_prototype_list_menu" name="PrototypeInheritance (BaseD)" parent="mt_settings_menu" action="inheritance_prototype_list_action" />
+        <menuitem id="mt_delegation_1_list_menu" name="DelegationInheritance1 (BaseA)" parent="mt_settings_menu" action="inheritance_delegation_1_list_action" />
+        <menuitem id="mt_delegation_2_list_menu" name="DelegationInheritance2 (BaseA, BaseB)" parent="mt_settings_menu" action="inheritance_delegation_2_list_action" />
+        <menuitem id="mt_delegation_3_list_menu" name="DelegationInheritance3 (BaseA)" parent="mt_settings_menu" action="inheritance_delegation_3_list_action" />
+        <menuitem id="mt_delegation_4_list_menu" name="DelegationInheritance4 (BaseA, BaseB)" parent="mt_settings_menu" action="inheritance_delegation_4_list_action" />
+
+    </data>
+</openerp>
