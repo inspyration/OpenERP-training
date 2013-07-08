@@ -1,1 +1,2 @@
-import testing
+import testing_fields
+import testing_inheritance

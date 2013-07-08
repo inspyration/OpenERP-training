@@ -9,7 +9,9 @@
         # Vues associées aux assistants
         # Vues associées aux modèles
         # Menus
-        "menu.xml"
+        "views/menu.xml",
+        "views/menu_fields.xml",
+        "views/menu_inheritance.xml",
         # Données
     ],
     "demo": [

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+        <!--         ACTIONS         -->
+
+        <record model="ir.actions.act_window" id="field_testing_list_action">
+            <field name="name">FieldTesting</field>
+            <field name="res_model">testing.fieldtesting</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!--         MENUS         -->
+
+        <menuitem id="mt_field_testing_menu" name="FieldTesting" parent="mt_settings_menu" action="field_testing_list_action" />
+
+    </data>
+</openerp>

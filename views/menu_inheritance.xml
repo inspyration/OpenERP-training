@@ -59,9 +59,6 @@
 
         <!--         MENUS         -->
 
-        <menuitem id="main_testing_menu" name="testing" />
-        <menuitem id="mt_settings_menu" name="Settings" parent="main_testing_menu" />
-
         <menuitem id="mt_base_a_list_menu" name="BaseA" parent="mt_settings_menu" action="base_a_list_action" />
         <menuitem id="mt_base_b_list_menu" name="BaseB" parent="mt_settings_menu" action="base_b_list_action" />
         <menuitem id="mt_base_c_list_menu" name="BaseC (ClassInheritance)" parent="mt_settings_menu" action="base_c_list_action" />

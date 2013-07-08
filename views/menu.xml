@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+
+        <!--         MENUS PRINCIPAUX        -->
+
+        <menuitem id="main_testing_menu" name="testing" />
+        <menuitem id="mt_settings_menu" name="Settings" parent="main_testing_menu" />
+
+    </data>
+</openerp>
